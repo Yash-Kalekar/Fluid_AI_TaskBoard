@@ -1,0 +1,22 @@
+/* App-specific styles (Tailwind handles most UI) */
+
+@keyframes subtle-pop {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop-in {
+  animation: subtle-pop 220ms ease-out;
+}
+
+.glow-border {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 10px 30px rgba(0, 0, 0, 0.35);
+}
